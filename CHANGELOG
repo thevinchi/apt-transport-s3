@@ -1,3 +1,8 @@
+2020-07-27 Vince Stross <me@thevinchi.com>
+
+  * Setup local folder to support packaging with fpm from manifest.json
+  * Merged hotfix from @choopooly (decode urllib response with utf)
+
 2019-08-23 Marcin Kulisz <debian@kulisz.net>
 
   * Working Python3 version

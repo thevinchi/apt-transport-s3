@@ -69,7 +69,7 @@ class AWSCredentials(object):
         for i in range(0, RETRIES):
             try:
                 response = urllib.request.urlopen(request, None, 10)
-                self.iamrole = response.read().decode('utf-8')
+                self.iamrole = response.read()
                 break
             except ssl.SSLError as e:
                 if 'timed out' in e.message:
@@ -114,7 +114,7 @@ class AWSCredentials(object):
         for i in range(0, RETRIES):
             try:
                 response = urllib.request.urlopen(request, None, 30)
-                return json.loads(response.read().decode('utf-8'))
+                return json.loads(response.read())
             except ssl.SSLError as e:
                 if 'timed out' in e.message:
                     time.sleep(wait_time(i + 1))
