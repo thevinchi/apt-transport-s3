@@ -1,0 +1,28 @@
+{
+  "name": "apt-transport-s3",
+  "version": "2.0.1",
+  "description": "Enables APT support for s3:// package repositories.",
+  "vendor": "thevinchi",
+  "category": "admin",
+  "maintainer": "Vince Stross <me@thevinchi.com>",
+  "license": "GPL-3",
+  "homepage": "https://github.com/thevinchi/apt-transport-s3",
+  "dependencies": [
+    "apt",
+    "python3",
+    "python3-configobj"
+  ],
+  "sources": [
+    "apt=/usr/lib/",
+    "doc=/usr/share/",
+    "man=/usr/share/"
+  ],
+  "scripts": {
+    "before-install": null,
+    "after-install": null,
+    "before-remove": null,
+    "after-remove": null,
+    "before-upgrade": null,
+    "after-upgrade": null
+  }
+}
